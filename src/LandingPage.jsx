@@ -37,8 +37,12 @@ export default function LandingPage() {
         <div className="absolute inset-0" style={{ background: 'rgba(76, 130, 107, 0.4)' }}></div>
         <div className="relative z-10">
           <h1 className="text-5xl font-bold mb-6 text-white drop-shadow-xl">
-            二人三脚のシステム開発で<br className="hidden md:block" />アイデアを最速リリース
+            夫婦エンジニアによる<br className="hidden md:block" />システム開発・MVP開発
           </h1>
+          <p className="text-xl mb-8 text-white drop-shadow-lg max-w-3xl">
+            フルスタック開発からクラウド移行まで、<br className="hidden md:block" />
+            10年の現場経験でアイデアを最速リリース
+          </p>
           <a
             href="#contact"
             className="inline-block px-8 py-4 rounded shadow hover:opacity-90 transition"
@@ -61,14 +65,18 @@ export default function LandingPage() {
             loading="lazy"
             width="400"
             height="300"
+            decoding="async"
           />
           <div className="space-y-4">
+            <h3 className="text-2xl font-semibold mb-4" style={{ color: '#4c826b' }}>
+              システム開発のプロフェッショナル
+            </h3>
             <p className="leading-relaxed md:text-left">
               私たちは<strong>約 10 年の現場経験</strong>を持つフルスタック夫婦エンジニアです。<br />
-              <strong>優貴</strong>：クラウドインフラ構築、小規模 Web アプリ開発、PM。<br />
-              <strong>遥香</strong>：業務自動化、データ分析、UI/UX デザイン。<br />
+              <strong>優貴</strong>：AWS・GCP等のクラウドインフラ構築、Django・Rails等のWeb開発、PM。<br />
+              <strong>遥香</strong>：Python・GASによる業務自動化、データ分析、UI/UXデザイン。<br />
               小回りの利くユニットだからこそのスピード感と密なコミュニケーションで、<br />
-              <strong>要件定義 → 設計 → 実装 → テスト</strong> まで一気通貫で伴走します。
+              <strong>要件定義 → 設計 → 実装 → テスト → 運用</strong> まで一気通貫で伴走します。
             </p>
             <div className="mt-6 flex items-center justify-start space-x-2">
               <svg className="w-6 h-6 text-gray-700" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -90,15 +98,19 @@ export default function LandingPage() {
 
       {/* サービス */}
       <section id="services" className="py-20 px-6 md:px-16 bg-white">
-        <h2 className="text-3xl font-semibold text-center mb-12" style={{ color: '#4c826b' }}>サービス</h2>
+        <h2 className="text-3xl font-semibold text-center mb-6" style={{ color: '#4c826b' }}>システム開発サービス</h2>
+        <p className="text-center mb-12 max-w-3xl mx-auto text-lg">
+          MVP開発からレガシーシステムの現代化まで、<br className="hidden md:block" />
+          フルスタック夫婦エンジニアが一気通貫でサポート
+        </p>
         <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {[
-            { title: 'MVP 伴走開発', desc: 'Django / Rails でプロトタイプ構築し AWS/GCP へ CI/CD' },
-            { title: 'レガシーリプレース', desc: '旧 PHP をモダン FW & クラウドへ移行' },
-            { title: '業務自動化', desc: 'Python / GAS で定例作業を自動化' },
-            { title: 'API 連携', desc: 'Slack・LINE など外部サービス統合' },
-            { title: 'データ加工／分析', desc: 'Python & Pandas で集計・可視化ダッシュボード構築' },
-            { title: 'クラウド移行', desc: 'ECS・Lambda・Terraform 自動化' }
+            { title: 'MVP伴走開発', desc: 'Django・Rails等でプロトタイプ構築、AWS・GCPへのCI/CD環境構築まで完全サポート' },
+            { title: 'レガシーリプレース', desc: '古いPHPシステムをモダンなフレームワーク&クラウドへ安全に移行' },
+            { title: '業務自動化開発', desc: 'Python・GAS等で定例作業を自動化、工数削減と品質向上を実現' },
+            { title: 'API連携開発', desc: 'Slack・LINE・その他外部サービスとの連携システム構築' },
+            { title: 'データ分析基盤', desc: 'Python・Pandas等で集計・可視化ダッシュボード構築、意思決定を支援' },
+            { title: 'クラウド移行', desc: 'ECS・Lambda・Terraform等を活用したクラウドインフラ自動化' }
           ].map((service, idx) => (
             <article
               key={idx}
@@ -122,7 +134,10 @@ export default function LandingPage() {
 
       {/* 全体の流れ */}
       <section id="process" className="py-20 px-6 md:px-16 bg-white" style={{ background: '#e8ebf1' }}>
-        <h2 className="text-3xl font-semibold text-center mb-12" style={{ color: '#4c826b' }}>全体の流れ</h2>
+        <h2 className="text-3xl font-semibold text-center mb-6" style={{ color: '#4c826b' }}>システム開発の流れ</h2>
+        <p className="text-center mb-12 max-w-3xl mx-auto text-lg">
+          無料相談から運用まで、透明性の高いプロセスで進行
+        </p>
         <ol className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {['無料相談', '要件定義', '設計', '実装', 'テスト', 'リリース'].map((step, idx) => (
             <li
