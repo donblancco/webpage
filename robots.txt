@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://don-blanc-co.com/sitemap.xml

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://don-blanc-co.com/</loc>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://don-blanc-co.com/img/couple-photo.png</image:loc>
+      <image:title>長嶋夫婦 - フルスタックエンジニア</image:title>
+      <image:caption>約10年の現場経験を持つフルスタック夫婦エンジニア</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://don-blanc-co.com/img/header-tech-grow.png</image:loc>
+      <image:title>二人三脚のシステム開発</image:title>
+      <image:caption>アイデアを最速リリースするシステム開発サービス</image:caption>
+    </image:image>
+  </url>
+</urlset>
